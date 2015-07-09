@@ -15,7 +15,7 @@ public class ConnectDB {
     {
         if(awsSimpleDB==null)
         {
-            BasicAWSCredentials credentials= new BasicAWSCredentials( "AKIAICVRAR3V4MOWNCNA", "xW922TvEQSEn/bEkcWSD0YR2/l85FzEp7Yf7ekv4");//new BasicAWSCredentials(getProperties().getProperty("accessKey"), ConnectAnnouncementDB.getProperties().getProperty("secreteKey"));
+            BasicAWSCredentials credentials= new BasicAWSCredentials( "deleted", "deleted/deleted/deleted");//new BasicAWSCredentials(getProperties().getProperty("accessKey"), ConnectAnnouncementDB.getProperties().getProperty("secreteKey"));
             awsSimpleDB= new AmazonSimpleDBClient(credentials);
         }
         return awsSimpleDB;
