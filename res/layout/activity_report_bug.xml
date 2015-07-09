@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<RelativeLayout android:background="#ffffff" 
+    android:layout_marginTop="0dp" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <RelativeLayout 
+        android:layout_marginTop="20dp" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentRight="true" 
+        android:layout_alignParentLeft="true" 
+        android:id="@+id/relativeLayout2"> 
+        <RelativeLayout 
+            android:background="#ffffff" 
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent" 
+            android:layout_alignParentTop="true" 
+            android:layout_alignParentLeft="true" 
+            android:id="@+id/relativeLayout1" 
+            android:layout_margin="5dp"> 
+<!-- <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_margin="5dp" android:src="@drawable" /> -->
+ <TextView 
+     android:layout_height="wrap_content" 
+     android:layout_width="wrap_content" 
+     android:id="@+id/announcementTitle" 
+     android:textSize="20sp" 
+     android:textColor="@android:color/black" 
+     android:textAppearance="?android:attr/textAppearanceSmall" 
+     android:text="Information About Bug" 
+     android:layout_centerHorizontal="true"/> 
+     <EditText android:background="#aff8e6" 
+         android:layout_marginTop="15dp" 
+         android:layout_height="wrap_content" 
+         android:layout_width="wrap_content" 
+         android:id="@+id/contentOfBug" 
+         android:layout_centerHorizontal="true" 
+         android:width="300dp" android:height="100dp" 
+         android:ems="10" 
+         android:layout_below="@+id/announcementTitle"/> 
+         <Button android:layout_marginTop="20dp" 
+             android:layout_height="wrap_content" 
+             android:layout_width="wrap_content" 
+             android:id="@+id/reportButton" 
+             android:text="Report" 
+             android:layout_centerHorizontal="true" 
+             android:layout_below="@+id/contentOfBug"/> 
+		</RelativeLayout> 
+	</RelativeLayout> 
+</RelativeLayout>

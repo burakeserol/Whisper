@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dp"
+    android:background="#ffffff" >
+ 
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" >
+ 
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="#ffffff" >
+ 
+            <!--
+                 <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:src="@drawable" />
+            -->
+ 
+            <TextView
+                android:id="@+id/announcementTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Announcement Title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+ 
+            <EditText
+                android:id="@+id/contentOfAnnouncement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/announcementTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#aff8e6"
+                android:ems="10"
+                android:height="80dp"
+                android:width="300dp" />
+ 
+            <TextView
+                android:id="@+id/radiusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentOfAnnouncement"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text=" Radius"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+ 
+            <SeekBar
+                android:id="@+id/radiusBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/radiusText"
+                android:layout_marginTop="5dp"
+                android:max="100" />
+ 
+            <TextView
+                android:id="@+id/durationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiusBar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Duration"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+ 
+            <SeekBar
+                android:id="@+id/durationBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/durationText"
+                android:layout_marginTop="5dp"
+                android:max="60" />
+ 
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visibility"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Create" />
+ 
+            <CheckBox
+                android:id="@+id/visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/announcementTitle"
+                android:layout_below="@+id/durationBar"
+                android:layout_marginTop="23dp"
+                android:text="Visibility of Profile" />
+ 
+        </RelativeLayout>
+ 
+    </RelativeLayout>
+ 
+ 
+ 
+</RelativeLayout>
